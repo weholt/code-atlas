@@ -1,0 +1,25 @@
+metrics:
+  max_complexity: 10
+  max_loc: 500
+  min_comment_ratio: 0.1
+
+weights:
+  complexity: 0.5
+  size: 0.3
+  coupling: 0.2
+
+actions:
+  - id: R001
+    condition: "complexity > max_complexity"
+    message: "Average complexity exceeds threshold"
+    action: "Refactor: Break down complex functions"
+
+  - id: R002
+    condition: "loc > max_loc"
+    message: "File too large"
+    action: "Refactor: Split into smaller modules"
+
+  - id: R003
+    condition: "comment_ratio < min_comment_ratio"
+    message: "Insufficient documentation"
+    action: "Add docstrings and comments"

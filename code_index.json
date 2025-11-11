@@ -1,0 +1,2632 @@
+{
+  "scanned_root": "C:\\Users\\thomas.weholt\\Desktop\\dotwork-main\\modules\\pystructmap",
+  "scanned_at": "2025-11-11T14:36:09.317233",
+  "version": "0.1.0",
+  "total_files": 16,
+  "files": [
+    {
+      "path": "scripts\\build.py",
+      "entities": [
+        {
+          "type": "class",
+          "name": "BuildRunner",
+          "lineno": 12,
+          "end_lineno": 344,
+          "docstring": "Handles the build process for CodeAtlas.",
+          "methods": [
+            "__init__",
+            "run_command",
+            "print_step",
+            "print_result",
+            "check_dependencies",
+            "sync_dependencies",
+            "format_code",
+            "lint_code",
+            "type_check",
+            "run_unit_tests",
+            "step_security",
+            "generate_reports",
+            "clean_artifacts",
+            "run_full_build"
+          ],
+          "bases": []
+        },
+        {
+          "type": "function",
+          "name": "main",
+          "lineno": 347,
+          "end_lineno": 363,
+          "docstring": "Main entry point."
+        },
+        {
+          "type": "function",
+          "name": "__init__",
+          "lineno": 15,
+          "end_lineno": 19,
+          "docstring": null
+        },
+        {
+          "type": "function",
+          "name": "run_command",
+          "lineno": 21,
+          "end_lineno": 46,
+          "docstring": "Run a command and return success status and output."
+        },
+        {
+          "type": "function",
+          "name": "print_step",
+          "lineno": 48,
+          "end_lineno": 52,
+          "docstring": "Print a build step header."
+        },
+        {
+          "type": "function",
+          "name": "print_result",
+          "lineno": 54,
+          "end_lineno": 64,
+          "docstring": "Print the result of a build step."
+        },
+        {
+          "type": "function",
+          "name": "check_dependencies",
+          "lineno": 66,
+          "end_lineno": 87,
+          "docstring": "Check if all required tools are available."
+        },
+        {
+          "type": "function",
+          "name": "sync_dependencies",
+          "lineno": 89,
+          "end_lineno": 94,
+          "docstring": "Sync project dependencies."
+        },
+        {
+          "type": "function",
+          "name": "format_code",
+          "lineno": 96,
+          "end_lineno": 123,
+          "docstring": "Format code with ruff."
+        },
+        {
+          "type": "function",
+          "name": "lint_code",
+          "lineno": 125,
+          "end_lineno": 141,
+          "docstring": "Lint code with ruff."
+        },
+        {
+          "type": "function",
+          "name": "type_check",
+          "lineno": 143,
+          "end_lineno": 158,
+          "docstring": "Type check with mypy."
+        },
+        {
+          "type": "function",
+          "name": "run_unit_tests",
+          "lineno": 160,
+          "end_lineno": 228,
+          "docstring": "Run unit tests with coverage."
+        },
+        {
+          "type": "function",
+          "name": "step_security",
+          "lineno": 230,
+          "end_lineno": 245,
+          "docstring": "Run security checks."
+        },
+        {
+          "type": "function",
+          "name": "generate_reports",
+          "lineno": 247,
+          "end_lineno": 259,
+          "docstring": "Generate build reports."
+        },
+        {
+          "type": "function",
+          "name": "clean_artifacts",
+          "lineno": 261,
+          "end_lineno": 290,
+          "docstring": "Clean build artifacts."
+        },
+        {
+          "type": "function",
+          "name": "run_full_build",
+          "lineno": 292,
+          "end_lineno": 344,
+          "docstring": "Run the complete build pipeline."
+        }
+      ],
+      "complexity": [
+        {
+          "function": "main",
+          "complexity": 3,
+          "lineno": 347
+        },
+        {
+          "function": "BuildRunner",
+          "complexity": 5,
+          "lineno": 12
+        },
+        {
+          "function": "__init__",
+          "complexity": 1,
+          "lineno": 15
+        },
+        {
+          "function": "run_command",
+          "complexity": 6,
+          "lineno": 21
+        },
+        {
+          "function": "print_step",
+          "complexity": 1,
+          "lineno": 48
+        },
+        {
+          "function": "print_result",
+          "complexity": 4,
+          "lineno": 54
+        },
+        {
+          "function": "check_dependencies",
+          "complexity": 4,
+          "lineno": 66
+        },
+        {
+          "function": "sync_dependencies",
+          "complexity": 1,
+          "lineno": 89
+        },
+        {
+          "function": "format_code",
+          "complexity": 5,
+          "lineno": 96
+        },
+        {
+          "function": "lint_code",
+          "complexity": 3,
+          "lineno": 125
+        },
+        {
+          "function": "type_check",
+          "complexity": 2,
+          "lineno": 143
+        },
+        {
+          "function": "run_unit_tests",
+          "complexity": 13,
+          "lineno": 160
+        },
+        {
+          "function": "step_security",
+          "complexity": 2,
+          "lineno": 230
+        },
+        {
+          "function": "generate_reports",
+          "complexity": 3,
+          "lineno": 247
+        },
+        {
+          "function": "clean_artifacts",
+          "complexity": 7,
+          "lineno": 261
+        },
+        {
+          "function": "run_full_build",
+          "complexity": 7,
+          "lineno": 292
+        }
+      ],
+      "raw": {
+        "loc": 367,
+        "sloc": 281,
+        "comments": 1,
+        "multi": 0,
+        "blank": 69
+      },
+      "comment_ratio": 0.003,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 0.9966442953020134,
+        "type_errors": 1,
+        "call_graph": {
+          "__init__": [
+            "Path"
+          ],
+          "run_command": [
+            "print",
+            "join",
+            "run"
+          ],
+          "print_step": [
+            "print"
+          ],
+          "print_result": [
+            "print",
+            "append"
+          ],
+          "check_dependencies": [
+            "print_step",
+            "run_command",
+            "split",
+            "strip",
+            "print"
+          ],
+          "sync_dependencies": [
+            "print_step",
+            "run_command",
+            "print_result"
+          ],
+          "format_code": [
+            "print_step",
+            "exists",
+            "print",
+            "extend",
+            "str",
+            "run_command",
+            "append",
+            "print_result"
+          ],
+          "lint_code": [
+            "print_step",
+            "exists",
+            "print",
+            "append",
+            "extend",
+            "str",
+            "run_command",
+            "print_result"
+          ],
+          "type_check": [
+            "print_step",
+            "exists",
+            "print",
+            "run_command",
+            "str",
+            "print_result"
+          ],
+          "run_unit_tests": [
+            "print_step",
+            "exists",
+            "is_dir",
+            "rmtree",
+            "unlink",
+            "print",
+            "str",
+            "index",
+            "run_command",
+            "print_result",
+            "parse",
+            "getroot",
+            "find",
+            "float",
+            "get",
+            "int"
+          ],
+          "step_security": [
+            "print_step",
+            "exists",
+            "print",
+            "run_command",
+            "str",
+            "print_result"
+          ],
+          "generate_reports": [
+            "print_step",
+            "exists",
+            "print"
+          ],
+          "clean_artifacts": [
+            "print_step",
+            "startswith",
+            "glob",
+            "is_dir",
+            "rmtree",
+            "unlink",
+            "exists",
+            "print"
+          ],
+          "run_full_build": [
+            "print",
+            "time",
+            "len",
+            "step_func",
+            "append",
+            "join"
+          ],
+          "main": [
+            "ArgumentParser",
+            "add_argument",
+            "parse_args",
+            "BuildRunner",
+            "clean_artifacts",
+            "run_full_build"
+          ]
+        }
+      }
+    },
+    {
+      "path": "tests\\test_agent_adapter.py",
+      "entities": [
+        {
+          "type": "function",
+          "name": "mock_index_data",
+          "lineno": 12,
+          "end_lineno": 43,
+          "docstring": "Sample index data for testing."
+        },
+        {
+          "type": "function",
+          "name": "adapter_with_mocks",
+          "lineno": 47,
+          "end_lineno": 81,
+          "docstring": "Create adapter with mocked components."
+        },
+        {
+          "type": "function",
+          "name": "test_agent_adapter_init",
+          "lineno": 84,
+          "end_lineno": 101,
+          "docstring": "Test adapter initialization."
+        },
+        {
+          "type": "function",
+          "name": "test_get_symbol_location",
+          "lineno": 104,
+          "end_lineno": 110,
+          "docstring": "Test symbol location lookup."
+        },
+        {
+          "type": "function",
+          "name": "test_get_top_refactors",
+          "lineno": 113,
+          "end_lineno": 119,
+          "docstring": "Test top refactor targets."
+        },
+        {
+          "type": "function",
+          "name": "test_get_rule_violations",
+          "lineno": 122,
+          "end_lineno": 128,
+          "docstring": "Test rule violation collection."
+        },
+        {
+          "type": "function",
+          "name": "test_get_complex_functions",
+          "lineno": 131,
+          "end_lineno": 137,
+          "docstring": "Test complex function discovery."
+        },
+        {
+          "type": "function",
+          "name": "test_get_dependency_hotspots",
+          "lineno": 140,
+          "end_lineno": 146,
+          "docstring": "Test dependency hotspot detection."
+        },
+        {
+          "type": "function",
+          "name": "test_get_untyped_or_poor_docs",
+          "lineno": 149,
+          "end_lineno": 156,
+          "docstring": "Test poor documentation detection."
+        },
+        {
+          "type": "function",
+          "name": "test_summarize_state",
+          "lineno": 159,
+          "end_lineno": 168,
+          "docstring": "Test state summary generation."
+        },
+        {
+          "type": "function",
+          "name": "test_adapter_without_rules",
+          "lineno": 171,
+          "end_lineno": 184,
+          "docstring": "Test adapter when rules file doesn't exist."
+        }
+      ],
+      "complexity": [
+        {
+          "function": "mock_index_data",
+          "complexity": 1,
+          "lineno": 12
+        },
+        {
+          "function": "adapter_with_mocks",
+          "complexity": 1,
+          "lineno": 47
+        },
+        {
+          "function": "test_agent_adapter_init",
+          "complexity": 4,
+          "lineno": 84
+        },
+        {
+          "function": "test_get_symbol_location",
+          "complexity": 4,
+          "lineno": 104
+        },
+        {
+          "function": "test_get_top_refactors",
+          "complexity": 4,
+          "lineno": 113
+        },
+        {
+          "function": "test_get_rule_violations",
+          "complexity": 3,
+          "lineno": 122
+        },
+        {
+          "function": "test_get_complex_functions",
+          "complexity": 4,
+          "lineno": 131
+        },
+        {
+          "function": "test_get_dependency_hotspots",
+          "complexity": 4,
+          "lineno": 140
+        },
+        {
+          "function": "test_get_untyped_or_poor_docs",
+          "complexity": 4,
+          "lineno": 149
+        },
+        {
+          "function": "test_summarize_state",
+          "complexity": 7,
+          "lineno": 159
+        },
+        {
+          "function": "test_adapter_without_rules",
+          "complexity": 5,
+          "lineno": 171
+        }
+      ],
+      "raw": {
+        "loc": 184,
+        "sloc": 121,
+        "comments": 10,
+        "multi": 0,
+        "blank": 44
+      },
+      "comment_ratio": 0.054,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 0.9142857142857143,
+        "type_errors": 12,
+        "call_graph": {
+          "mock_index_data": [],
+          "adapter_with_mocks": [
+            "write_text",
+            "patch",
+            "MagicMock",
+            "AgentAdapter",
+            "str"
+          ],
+          "test_agent_adapter_init": [
+            "write_text",
+            "patch",
+            "AgentAdapter",
+            "str"
+          ],
+          "test_get_symbol_location": [
+            "get_symbol_location"
+          ],
+          "test_get_top_refactors": [
+            "get_top_refactors",
+            "len"
+          ],
+          "test_get_rule_violations": [
+            "get_rule_violations",
+            "len"
+          ],
+          "test_get_complex_functions": [
+            "get_complex_functions",
+            "len"
+          ],
+          "test_get_dependency_hotspots": [
+            "get_dependency_hotspots",
+            "len"
+          ],
+          "test_get_untyped_or_poor_docs": [
+            "get_untyped_or_poor_docs",
+            "len"
+          ],
+          "test_summarize_state": [
+            "summarize_state"
+          ],
+          "test_adapter_without_rules": [
+            "write_text",
+            "patch",
+            "AgentAdapter",
+            "str",
+            "get_top_refactors",
+            "get_rule_violations"
+          ]
+        }
+      }
+    },
+    {
+      "path": "tests\\test_cache.py",
+      "entities": [
+        {
+          "type": "function",
+          "name": "temp_cache",
+          "lineno": 11,
+          "end_lineno": 14,
+          "docstring": "Create temporary cache file."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_init",
+          "lineno": 17,
+          "end_lineno": 23,
+          "docstring": "Test cache initialization."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_compute_hash",
+          "lineno": 26,
+          "end_lineno": 34,
+          "docstring": "Test file hash computation."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_set_get_hash",
+          "lineno": 37,
+          "end_lineno": 42,
+          "docstring": "Test storing and retrieving hash."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_is_unchanged",
+          "lineno": 45,
+          "end_lineno": 61,
+          "docstring": "Test unchanged file detection."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_update_file",
+          "lineno": 64,
+          "end_lineno": 83,
+          "docstring": "Test update_file method."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_remove",
+          "lineno": 86,
+          "end_lineno": 92,
+          "docstring": "Test removing cache entry."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_clear",
+          "lineno": 95,
+          "end_lineno": 102,
+          "docstring": "Test clearing all cache entries."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_cleanup",
+          "lineno": 105,
+          "end_lineno": 117,
+          "docstring": "Test cleanup of stale entries."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_persistence",
+          "lineno": 120,
+          "end_lineno": 134,
+          "docstring": "Test cache save and load."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_load_invalid_json",
+          "lineno": 137,
+          "end_lineno": 145,
+          "docstring": "Test loading corrupted cache file."
+        },
+        {
+          "type": "function",
+          "name": "test_cache_compute_hash_missing_file",
+          "lineno": 148,
+          "end_lineno": 154,
+          "docstring": "Test hash computation for missing file."
+        }
+      ],
+      "complexity": [
+        {
+          "function": "temp_cache",
+          "complexity": 1,
+          "lineno": 11
+        },
+        {
+          "function": "test_cache_init",
+          "complexity": 3,
+          "lineno": 17
+        },
+        {
+          "function": "test_cache_compute_hash",
+          "complexity": 3,
+          "lineno": 26
+        },
+        {
+          "function": "test_cache_set_get_hash",
+          "complexity": 3,
+          "lineno": 37
+        },
+        {
+          "function": "test_cache_is_unchanged",
+          "complexity": 3,
+          "lineno": 45
+        },
+        {
+          "function": "test_cache_update_file",
+          "complexity": 7,
+          "lineno": 64
+        },
+        {
+          "function": "test_cache_remove",
+          "complexity": 3,
+          "lineno": 86
+        },
+        {
+          "function": "test_cache_clear",
+          "complexity": 2,
+          "lineno": 95
+        },
+        {
+          "function": "test_cache_cleanup",
+          "complexity": 4,
+          "lineno": 105
+        },
+        {
+          "function": "test_cache_persistence",
+          "complexity": 3,
+          "lineno": 120
+        },
+        {
+          "function": "test_cache_load_invalid_json",
+          "complexity": 2,
+          "lineno": 137
+        },
+        {
+          "function": "test_cache_compute_hash_missing_file",
+          "complexity": 2,
+          "lineno": 148
+        }
+      ],
+      "raw": {
+        "loc": 154,
+        "sloc": 80,
+        "comments": 14,
+        "multi": 0,
+        "blank": 50
+      },
+      "comment_ratio": 0.091,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 0.875,
+        "type_errors": 13,
+        "call_graph": {
+          "temp_cache": [
+            "FileCache"
+          ],
+          "test_cache_init": [
+            "FileCache"
+          ],
+          "test_cache_compute_hash": [
+            "write_text",
+            "compute_hash",
+            "isinstance",
+            "len"
+          ],
+          "test_cache_set_get_hash": [
+            "set_hash",
+            "get_hash"
+          ],
+          "test_cache_is_unchanged": [
+            "write_text",
+            "compute_hash",
+            "set_hash",
+            "str",
+            "is_unchanged"
+          ],
+          "test_cache_update_file": [
+            "write_text",
+            "update_file",
+            "len"
+          ],
+          "test_cache_remove": [
+            "set_hash",
+            "get_hash",
+            "remove"
+          ],
+          "test_cache_clear": [
+            "set_hash",
+            "clear"
+          ],
+          "test_cache_cleanup": [
+            "set_hash",
+            "cleanup",
+            "get_hash"
+          ],
+          "test_cache_persistence": [
+            "FileCache",
+            "set_hash",
+            "save",
+            "get_hash"
+          ],
+          "test_cache_load_invalid_json": [
+            "write_text",
+            "FileCache"
+          ],
+          "test_cache_compute_hash_missing_file": [
+            "compute_hash"
+          ]
+        }
+      }
+    },
+    {
+      "path": "tests\\test_integration.py",
+      "entities": [
+        {
+          "type": "function",
+          "name": "test_scan_and_query_integration",
+          "lineno": 10,
+          "end_lineno": 96,
+          "docstring": "Test full pipeline: scan directory, load index, query results."
+        }
+      ],
+      "complexity": [
+        {
+          "function": "test_scan_and_query_integration",
+          "complexity": 15,
+          "lineno": 10
+        }
+      ],
+      "raw": {
+        "loc": 96,
+        "sloc": 65,
+        "comments": 9,
+        "multi": 0,
+        "blank": 20
+      },
+      "comment_ratio": 0.094,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 0.9736842105263158,
+        "type_errors": 2,
+        "call_graph": {
+          "test_scan_and_query_integration": [
+            "TemporaryDirectory",
+            "Path",
+            "write_text",
+            "ASTScanner",
+            "scan_directory",
+            "str",
+            "len",
+            "dumps",
+            "CodeIndex",
+            "find",
+            "complex",
+            "top_complex",
+            "all",
+            "dependencies"
+          ]
+        }
+      }
+    },
+    {
+      "path": "tests\\test_query.py",
+      "entities": [
+        {
+          "type": "function",
+          "name": "test_code_index_find",
+          "lineno": 10,
+          "end_lineno": 45,
+          "docstring": "Test finding entities by name."
+        },
+        {
+          "type": "function",
+          "name": "test_code_index_complex",
+          "lineno": 48,
+          "end_lineno": 75,
+          "docstring": "Test finding complex functions."
+        },
+        {
+          "type": "function",
+          "name": "test_code_index_dependencies",
+          "lineno": 78,
+          "end_lineno": 102,
+          "docstring": "Test getting file dependencies."
+        },
+        {
+          "type": "function",
+          "name": "test_code_index_top_complex",
+          "lineno": 105,
+          "end_lineno": 148,
+          "docstring": "Test getting top N most complex functions."
+        }
+      ],
+      "complexity": [
+        {
+          "function": "test_code_index_find",
+          "complexity": 4,
+          "lineno": 10
+        },
+        {
+          "function": "test_code_index_complex",
+          "complexity": 4,
+          "lineno": 48
+        },
+        {
+          "function": "test_code_index_dependencies",
+          "complexity": 3,
+          "lineno": 78
+        },
+        {
+          "function": "test_code_index_top_complex",
+          "complexity": 8,
+          "lineno": 105
+        }
+      ],
+      "raw": {
+        "loc": 148,
+        "sloc": 121,
+        "comments": 0,
+        "multi": 0,
+        "blank": 22
+      },
+      "comment_ratio": 0.0,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 0.9920634920634921,
+        "type_errors": 1,
+        "call_graph": {
+          "test_code_index_find": [
+            "TemporaryDirectory",
+            "Path",
+            "write_text",
+            "dumps",
+            "CodeIndex",
+            "find"
+          ],
+          "test_code_index_complex": [
+            "TemporaryDirectory",
+            "Path",
+            "write_text",
+            "dumps",
+            "CodeIndex",
+            "complex",
+            "len"
+          ],
+          "test_code_index_dependencies": [
+            "TemporaryDirectory",
+            "Path",
+            "write_text",
+            "dumps",
+            "CodeIndex",
+            "dependencies"
+          ],
+          "test_code_index_top_complex": [
+            "TemporaryDirectory",
+            "Path",
+            "write_text",
+            "dumps",
+            "CodeIndex",
+            "top_complex",
+            "len"
+          ]
+        }
+      }
+    },
+    {
+      "path": "tests\\test_rules.py",
+      "entities": [
+        {
+          "type": "function",
+          "name": "test_rule_engine_init",
+          "lineno": 9,
+          "end_lineno": 33,
+          "docstring": "Test rule engine initialization."
+        },
+        {
+          "type": "function",
+          "name": "test_rule_engine_evaluate",
+          "lineno": 36,
+          "end_lineno": 61,
+          "docstring": "Test rule evaluation."
+        }
+      ],
+      "complexity": [
+        {
+          "function": "test_rule_engine_init",
+          "complexity": 4,
+          "lineno": 9
+        },
+        {
+          "function": "test_rule_engine_evaluate",
+          "complexity": 2,
+          "lineno": 36
+        }
+      ],
+      "raw": {
+        "loc": 61,
+        "sloc": 43,
+        "comments": 0,
+        "multi": 0,
+        "blank": 15
+      },
+      "comment_ratio": 0.0,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 0.9782608695652174,
+        "type_errors": 1,
+        "call_graph": {
+          "test_rule_engine_init": [
+            "TemporaryDirectory",
+            "Path",
+            "write_text",
+            "RuleEngine",
+            "len"
+          ],
+          "test_rule_engine_evaluate": [
+            "TemporaryDirectory",
+            "Path",
+            "write_text",
+            "RuleEngine",
+            "evaluate",
+            "isinstance"
+          ]
+        }
+      }
+    },
+    {
+      "path": "tests\\test_scanner.py",
+      "entities": [
+        {
+          "type": "function",
+          "name": "test_scan_file_basic",
+          "lineno": 9,
+          "end_lineno": 34,
+          "docstring": "Test scanning a simple Python file."
+        },
+        {
+          "type": "function",
+          "name": "test_scan_directory",
+          "lineno": 37,
+          "end_lineno": 48,
+          "docstring": "Test scanning a directory."
+        }
+      ],
+      "complexity": [
+        {
+          "function": "test_scan_file_basic",
+          "complexity": 4,
+          "lineno": 9
+        },
+        {
+          "function": "test_scan_directory",
+          "complexity": 2,
+          "lineno": 37
+        }
+      ],
+      "raw": {
+        "loc": 48,
+        "sloc": 32,
+        "comments": 0,
+        "multi": 0,
+        "blank": 13
+      },
+      "comment_ratio": 0.0,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 0.9714285714285714,
+        "type_errors": 1,
+        "call_graph": {
+          "test_scan_file_basic": [
+            "TemporaryDirectory",
+            "Path",
+            "write_text",
+            "ASTScanner",
+            "scan_file",
+            "len"
+          ],
+          "test_scan_directory": [
+            "TemporaryDirectory",
+            "Path",
+            "write_text",
+            "scan_directory",
+            "exists"
+          ]
+        }
+      }
+    },
+    {
+      "path": "tests\\test_scoring.py",
+      "entities": [
+        {
+          "type": "function",
+          "name": "test_scoring_engine_init",
+          "lineno": 9,
+          "end_lineno": 29,
+          "docstring": "Test scoring engine initialization."
+        },
+        {
+          "type": "function",
+          "name": "test_scoring_engine_default_weights",
+          "lineno": 32,
+          "end_lineno": 38,
+          "docstring": "Test scoring engine uses defaults when no weights specified."
+        },
+        {
+          "type": "function",
+          "name": "test_score_file",
+          "lineno": 41,
+          "end_lineno": 68,
+          "docstring": "Test file scoring."
+        },
+        {
+          "type": "function",
+          "name": "test_rank",
+          "lineno": 71,
+          "end_lineno": 109,
+          "docstring": "Test ranking files by score."
+        }
+      ],
+      "complexity": [
+        {
+          "function": "test_scoring_engine_init",
+          "complexity": 4,
+          "lineno": 9
+        },
+        {
+          "function": "test_scoring_engine_default_weights",
+          "complexity": 4,
+          "lineno": 32
+        },
+        {
+          "function": "test_score_file",
+          "complexity": 7,
+          "lineno": 41
+        },
+        {
+          "function": "test_rank",
+          "complexity": 5,
+          "lineno": 71
+        }
+      ],
+      "raw": {
+        "loc": 109,
+        "sloc": 82,
+        "comments": 3,
+        "multi": 0,
+        "blank": 21
+      },
+      "comment_ratio": 0.028,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 0.9886363636363636,
+        "type_errors": 1,
+        "call_graph": {
+          "test_scoring_engine_init": [
+            "TemporaryDirectory",
+            "Path",
+            "write_text",
+            "ScoringEngine"
+          ],
+          "test_scoring_engine_default_weights": [
+            "ScoringEngine"
+          ],
+          "test_score_file": [
+            "ScoringEngine",
+            "score_file"
+          ],
+          "test_rank": [
+            "ScoringEngine",
+            "rank",
+            "len"
+          ]
+        }
+      }
+    },
+    {
+      "path": "src\\code_atlas\\agent_adapter.py",
+      "entities": [
+        {
+          "type": "class",
+          "name": "AgentAdapter",
+          "lineno": 11,
+          "end_lineno": 163,
+          "docstring": "Unified interface combining query, rules, and scoring.",
+          "methods": [
+            "__init__",
+            "get_symbol_location",
+            "get_top_refactors",
+            "get_rule_violations",
+            "get_complex_functions",
+            "get_dependency_hotspots",
+            "get_untyped_or_poor_docs",
+            "summarize_state"
+          ],
+          "bases": []
+        },
+        {
+          "type": "function",
+          "name": "__init__",
+          "lineno": 14,
+          "end_lineno": 29,
+          "docstring": "Initialize agent adapter.\n\nArgs:\n    root: Workspace root directory\n    index_file: Path to code index JSON\n    rules_file: Path to rules YAML"
+        },
+        {
+          "type": "function",
+          "name": "get_symbol_location",
+          "lineno": 31,
+          "end_lineno": 40,
+          "docstring": "Find where a symbol is defined.\n\nArgs:\n    symbol: Class or function name\n\nReturns:\n    Location info or None if not found"
+        },
+        {
+          "type": "function",
+          "name": "get_top_refactors",
+          "lineno": 42,
+          "end_lineno": 55,
+          "docstring": "Get top refactor priority targets.\n\nArgs:\n    limit: Number of results\n\nReturns:\n    List of files with scores"
+        },
+        {
+          "type": "function",
+          "name": "get_rule_violations",
+          "lineno": 57,
+          "end_lineno": 71,
+          "docstring": "Get all rule violations.\n\nReturns:\n    List of violations"
+        },
+        {
+          "type": "function",
+          "name": "get_complex_functions",
+          "lineno": 73,
+          "end_lineno": 82,
+          "docstring": "Find functions exceeding complexity threshold.\n\nArgs:\n    threshold: Minimum complexity\n\nReturns:\n    List of complex functions"
+        },
+        {
+          "type": "function",
+          "name": "get_dependency_hotspots",
+          "lineno": 84,
+          "end_lineno": 114,
+          "docstring": "Find files with high coupling.\n\nArgs:\n    min_edges: Minimum number of imports\n\nReturns:\n    List of highly coupled files"
+        },
+        {
+          "type": "function",
+          "name": "get_untyped_or_poor_docs",
+          "lineno": 116,
+          "end_lineno": 141,
+          "docstring": "Find files with insufficient documentation.\n\nArgs:\n    min_comment_ratio: Minimum acceptable comment ratio\n\nReturns:\n    List of poorly documented files"
+        },
+        {
+          "type": "function",
+          "name": "summarize_state",
+          "lineno": 143,
+          "end_lineno": 163,
+          "docstring": "Get compact summary of codebase state.\n\nReturns:\n    Summary dict with key metrics"
+        }
+      ],
+      "complexity": [
+        {
+          "function": "AgentAdapter",
+          "complexity": 3,
+          "lineno": 11
+        },
+        {
+          "function": "__init__",
+          "complexity": 3,
+          "lineno": 14
+        },
+        {
+          "function": "get_symbol_location",
+          "complexity": 1,
+          "lineno": 31
+        },
+        {
+          "function": "get_top_refactors",
+          "complexity": 2,
+          "lineno": 42
+        },
+        {
+          "function": "get_rule_violations",
+          "complexity": 3,
+          "lineno": 57
+        },
+        {
+          "function": "get_complex_functions",
+          "complexity": 1,
+          "lineno": 73
+        },
+        {
+          "function": "get_dependency_hotspots",
+          "complexity": 3,
+          "lineno": 84
+        },
+        {
+          "function": "get_untyped_or_poor_docs",
+          "complexity": 3,
+          "lineno": 116
+        },
+        {
+          "function": "summarize_state",
+          "complexity": 3,
+          "lineno": 143
+        }
+      ],
+      "raw": {
+        "loc": 163,
+        "sloc": 76,
+        "comments": 3,
+        "multi": 44,
+        "blank": 38
+      },
+      "comment_ratio": 0.018,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 1.0,
+        "type_errors": 0,
+        "call_graph": {
+          "__init__": [
+            "Path",
+            "CodeIndex",
+            "exists",
+            "RuleEngine",
+            "ScoringEngine"
+          ],
+          "get_symbol_location": [
+            "find"
+          ],
+          "get_top_refactors": [
+            "rank"
+          ],
+          "get_rule_violations": [
+            "get",
+            "evaluate",
+            "extend"
+          ],
+          "get_complex_functions": [
+            "complex"
+          ],
+          "get_dependency_hotspots": [
+            "get",
+            "items",
+            "len",
+            "append",
+            "sort",
+            "int"
+          ],
+          "get_untyped_or_poor_docs": [
+            "get",
+            "append",
+            "sort",
+            "int"
+          ],
+          "summarize_state": [
+            "len",
+            "get",
+            "sum",
+            "get_complex_functions",
+            "get_rule_violations",
+            "get_dependency_hotspots"
+          ]
+        }
+      }
+    },
+    {
+      "path": "src\\code_atlas\\cache.py",
+      "entities": [
+        {
+          "type": "class",
+          "name": "FileCache",
+          "lineno": 8,
+          "end_lineno": 126,
+          "docstring": "Cache for tracking file hashes to enable incremental scans.",
+          "methods": [
+            "__init__",
+            "load",
+            "save",
+            "get_hash",
+            "set_hash",
+            "remove",
+            "compute_hash",
+            "is_unchanged",
+            "update_file",
+            "clear",
+            "cleanup"
+          ],
+          "bases": []
+        },
+        {
+          "type": "function",
+          "name": "__init__",
+          "lineno": 11,
+          "end_lineno": 19,
+          "docstring": "Initialize file cache.\n\nArgs:\n    cache_file: Path to cache file"
+        },
+        {
+          "type": "function",
+          "name": "load",
+          "lineno": 21,
+          "end_lineno": 27,
+          "docstring": "Load cache from file."
+        },
+        {
+          "type": "function",
+          "name": "save",
+          "lineno": 29,
+          "end_lineno": 34,
+          "docstring": "Save cache to file."
+        },
+        {
+          "type": "function",
+          "name": "get_hash",
+          "lineno": 36,
+          "end_lineno": 45,
+          "docstring": "Get cached hash for a file.\n\nArgs:\n    file_path: Path to file\n\nReturns:\n    Cached hash or None if not in cache"
+        },
+        {
+          "type": "function",
+          "name": "set_hash",
+          "lineno": 47,
+          "end_lineno": 54,
+          "docstring": "Store hash for a file.\n\nArgs:\n    file_path: Path to file\n    file_hash: SHA-256 hash of file contents"
+        },
+        {
+          "type": "function",
+          "name": "remove",
+          "lineno": 56,
+          "end_lineno": 62,
+          "docstring": "Remove file from cache.\n\nArgs:\n    file_path: Path to file"
+        },
+        {
+          "type": "function",
+          "name": "compute_hash",
+          "lineno": 64,
+          "end_lineno": 76,
+          "docstring": "Compute SHA-256 hash of file contents.\n\nArgs:\n    file_path: Path to file\n\nReturns:\n    Hexadecimal hash string"
+        },
+        {
+          "type": "function",
+          "name": "is_unchanged",
+          "lineno": 78,
+          "end_lineno": 93,
+          "docstring": "Check if file is unchanged since last scan.\n\nArgs:\n    file_path: Path to file\n\nReturns:\n    True if file hash matches cached hash"
+        },
+        {
+          "type": "function",
+          "name": "update_file",
+          "lineno": 95,
+          "end_lineno": 112,
+          "docstring": "Update cache entry for a file.\n\nArgs:\n    file_path: Path to file\n\nReturns:\n    Tuple of (changed, hash) where changed is True if file was modified"
+        },
+        {
+          "type": "function",
+          "name": "clear",
+          "lineno": 114,
+          "end_lineno": 116,
+          "docstring": "Clear all cache entries."
+        },
+        {
+          "type": "function",
+          "name": "cleanup",
+          "lineno": 118,
+          "end_lineno": 126,
+          "docstring": "Remove cache entries for files that no longer exist.\n\nArgs:\n    existing_files: Set of file paths that currently exist"
+        }
+      ],
+      "complexity": [
+        {
+          "function": "FileCache",
+          "complexity": 2,
+          "lineno": 8
+        },
+        {
+          "function": "__init__",
+          "complexity": 1,
+          "lineno": 11
+        },
+        {
+          "function": "load",
+          "complexity": 3,
+          "lineno": 21
+        },
+        {
+          "function": "save",
+          "complexity": 2,
+          "lineno": 29
+        },
+        {
+          "function": "get_hash",
+          "complexity": 1,
+          "lineno": 36
+        },
+        {
+          "function": "set_hash",
+          "complexity": 1,
+          "lineno": 47
+        },
+        {
+          "function": "remove",
+          "complexity": 1,
+          "lineno": 56
+        },
+        {
+          "function": "compute_hash",
+          "complexity": 2,
+          "lineno": 64
+        },
+        {
+          "function": "is_unchanged",
+          "complexity": 2,
+          "lineno": 78
+        },
+        {
+          "function": "update_file",
+          "complexity": 1,
+          "lineno": 95
+        },
+        {
+          "function": "clear",
+          "complexity": 1,
+          "lineno": 114
+        },
+        {
+          "function": "cleanup",
+          "complexity": 4,
+          "lineno": 118
+        }
+      ],
+      "raw": {
+        "loc": 126,
+        "sloc": 50,
+        "comments": 1,
+        "multi": 41,
+        "blank": 30
+      },
+      "comment_ratio": 0.008,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 1.0,
+        "type_errors": 0,
+        "call_graph": {
+          "__init__": [
+            "Path",
+            "load"
+          ],
+          "load": [
+            "exists",
+            "loads",
+            "read_text"
+          ],
+          "save": [
+            "write_text",
+            "dumps"
+          ],
+          "get_hash": [
+            "get"
+          ],
+          "set_hash": [],
+          "remove": [
+            "pop"
+          ],
+          "compute_hash": [
+            "hexdigest",
+            "sha256",
+            "read_bytes"
+          ],
+          "is_unchanged": [
+            "str",
+            "get_hash",
+            "compute_hash"
+          ],
+          "update_file": [
+            "str",
+            "compute_hash",
+            "get_hash",
+            "set_hash"
+          ],
+          "clear": [],
+          "cleanup": [
+            "remove"
+          ]
+        }
+      }
+    },
+    {
+      "path": "src\\code_atlas\\cli.py",
+      "entities": [
+        {
+          "type": "function",
+          "name": "scan",
+          "lineno": 28,
+          "end_lineno": 71,
+          "docstring": "Scan a Python codebase and generate structure index."
+        },
+        {
+          "type": "function",
+          "name": "rank",
+          "lineno": 75,
+          "end_lineno": 102,
+          "docstring": "Rank files by refactor priority."
+        },
+        {
+          "type": "function",
+          "name": "check",
+          "lineno": 106,
+          "end_lineno": 134,
+          "docstring": "Check code against quality rules."
+        },
+        {
+          "type": "function",
+          "name": "agent",
+          "lineno": 138,
+          "end_lineno": 175,
+          "docstring": "Query codebase for agent integration (outputs JSON)."
+        },
+        {
+          "type": "function",
+          "name": "watch",
+          "lineno": 179,
+          "end_lineno": 435,
+          "docstring": "Watch directory for Python file changes and update index."
+        },
+        {
+          "type": "function",
+          "name": "watch_status",
+          "lineno": 439,
+          "end_lineno": 523,
+          "docstring": "Check watch daemon status and show recent activity."
+        },
+        {
+          "type": "function",
+          "name": "stop_watch",
+          "lineno": 527,
+          "end_lineno": 570,
+          "docstring": "Stop the watch daemon."
+        },
+        {
+          "type": "class",
+          "name": "PythonFileHandler",
+          "lineno": 351,
+          "end_lineno": 373,
+          "docstring": "Handle Python file change events.",
+          "methods": [
+            "on_modified",
+            "on_created",
+            "on_deleted"
+          ],
+          "bases": [
+            "FileSystemEventHandler"
+          ]
+        },
+        {
+          "type": "function",
+          "name": "on_modified",
+          "lineno": 354,
+          "end_lineno": 359,
+          "docstring": "Handle file modification."
+        },
+        {
+          "type": "function",
+          "name": "on_created",
+          "lineno": 361,
+          "end_lineno": 366,
+          "docstring": "Handle file creation."
+        },
+        {
+          "type": "function",
+          "name": "on_deleted",
+          "lineno": 368,
+          "end_lineno": 373,
+          "docstring": "Handle file deletion."
+        },
+        {
+          "type": "function",
+          "name": "progress_callback",
+          "lineno": 55,
+          "end_lineno": 56,
+          "docstring": null
+        },
+        {
+          "type": "function",
+          "name": "progress_callback",
+          "lineno": 63,
+          "end_lineno": 64,
+          "docstring": null
+        }
+      ],
+      "complexity": [
+        {
+          "function": "scan",
+          "complexity": 6,
+          "lineno": 28
+        },
+        {
+          "function": "rank",
+          "complexity": 2,
+          "lineno": 75
+        },
+        {
+          "function": "check",
+          "complexity": 4,
+          "lineno": 106
+        },
+        {
+          "function": "agent",
+          "complexity": 8,
+          "lineno": 138
+        },
+        {
+          "function": "watch",
+          "complexity": 28,
+          "lineno": 179
+        },
+        {
+          "function": "watch_status",
+          "complexity": 14,
+          "lineno": 439
+        },
+        {
+          "function": "stop_watch",
+          "complexity": 6,
+          "lineno": 527
+        }
+      ],
+      "raw": {
+        "loc": 574,
+        "sloc": 409,
+        "comments": 64,
+        "multi": 0,
+        "blank": 101
+      },
+      "comment_ratio": 0.111,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true
+    },
+    {
+      "path": "src\\code_atlas\\query.py",
+      "entities": [
+        {
+          "type": "class",
+          "name": "CodeIndex",
+          "lineno": 8,
+          "end_lineno": 111,
+          "docstring": "In-memory code index with fast lookup capabilities.",
+          "methods": [
+            "__init__",
+            "_build_indices",
+            "find",
+            "complex",
+            "dependencies",
+            "top_complex"
+          ],
+          "bases": []
+        },
+        {
+          "type": "function",
+          "name": "__init__",
+          "lineno": 11,
+          "end_lineno": 20,
+          "docstring": "Initialize code index from JSON file.\n\nArgs:\n    index_path: Path to code_index.json file"
+        },
+        {
+          "type": "function",
+          "name": "_build_indices",
+          "lineno": 22,
+          "end_lineno": 33,
+          "docstring": "Build in-memory indices for O(1) lookups."
+        },
+        {
+          "type": "function",
+          "name": "find",
+          "lineno": 35,
+          "end_lineno": 44,
+          "docstring": "Find entity by name.\n\nArgs:\n    name: Name of class or function to find\n\nReturns:\n    Entity information or None if not found"
+        },
+        {
+          "type": "function",
+          "name": "complex",
+          "lineno": 46,
+          "end_lineno": 69,
+          "docstring": "Find functions exceeding complexity threshold.\n\nArgs:\n    threshold: Minimum complexity value\n\nReturns:\n    List of complex functions"
+        },
+        {
+          "type": "function",
+          "name": "dependencies",
+          "lineno": 71,
+          "end_lineno": 84,
+          "docstring": "Get dependencies for a file.\n\nArgs:\n    file_path: Path to file\n\nReturns:\n    Dictionary with 'imports' and 'imported_by' lists"
+        },
+        {
+          "type": "function",
+          "name": "top_complex",
+          "lineno": 86,
+          "end_lineno": 111,
+          "docstring": "Get top N most complex functions.\n\nArgs:\n    n: Number of results to return\n\nReturns:\n    List of most complex functions sorted by complexity descending"
+        }
+      ],
+      "complexity": [
+        {
+          "function": "CodeIndex",
+          "complexity": 3,
+          "lineno": 8
+        },
+        {
+          "function": "__init__",
+          "complexity": 1,
+          "lineno": 11
+        },
+        {
+          "function": "_build_indices",
+          "complexity": 3,
+          "lineno": 22
+        },
+        {
+          "function": "find",
+          "complexity": 1,
+          "lineno": 35
+        },
+        {
+          "function": "complex",
+          "complexity": 4,
+          "lineno": 46
+        },
+        {
+          "function": "dependencies",
+          "complexity": 1,
+          "lineno": 71
+        },
+        {
+          "function": "top_complex",
+          "complexity": 3,
+          "lineno": 86
+        }
+      ],
+      "raw": {
+        "loc": 111,
+        "sloc": 54,
+        "comments": 1,
+        "multi": 28,
+        "blank": 25
+      },
+      "comment_ratio": 0.009,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 1.0,
+        "type_errors": 0,
+        "call_graph": {
+          "__init__": [
+            "open",
+            "load",
+            "_build_indices"
+          ],
+          "_build_indices": [
+            "get"
+          ],
+          "find": [
+            "get"
+          ],
+          "complex": [
+            "get",
+            "append"
+          ],
+          "dependencies": [
+            "get"
+          ],
+          "top_complex": [
+            "get",
+            "append",
+            "sort"
+          ]
+        }
+      }
+    },
+    {
+      "path": "src\\code_atlas\\rules.py",
+      "entities": [
+        {
+          "type": "class",
+          "name": "RuleEngine",
+          "lineno": 9,
+          "end_lineno": 100,
+          "docstring": "Dynamic rule engine for code quality checks.",
+          "methods": [
+            "__init__",
+            "evaluate",
+            "_check_condition",
+            "_get_avg_complexity"
+          ],
+          "bases": []
+        },
+        {
+          "type": "function",
+          "name": "__init__",
+          "lineno": 12,
+          "end_lineno": 19,
+          "docstring": "Initialize rule engine from YAML file.\n\nArgs:\n    rules_path: Path to rules.yaml file"
+        },
+        {
+          "type": "function",
+          "name": "evaluate",
+          "lineno": 21,
+          "end_lineno": 51,
+          "docstring": "Evaluate rules against file data.\n\nArgs:\n    file_data: File analysis data from scanner\n\nReturns:\n    List of rule violations with details"
+        },
+        {
+          "type": "function",
+          "name": "_check_condition",
+          "lineno": 53,
+          "end_lineno": 84,
+          "docstring": "Check if condition is met.\n\nArgs:\n    condition: Condition expression to evaluate\n    file_data: File analysis data\n    metrics: Metrics thresholds\n\nReturns:\n    True if condition is met"
+        },
+        {
+          "type": "function",
+          "name": "_get_avg_complexity",
+          "lineno": 86,
+          "end_lineno": 100,
+          "docstring": "Get average complexity for a file.\n\nArgs:\n    file_data: File analysis data\n\nReturns:\n    Average complexity value"
+        }
+      ],
+      "complexity": [
+        {
+          "function": "RuleEngine",
+          "complexity": 3,
+          "lineno": 9
+        },
+        {
+          "function": "__init__",
+          "complexity": 1,
+          "lineno": 12
+        },
+        {
+          "function": "evaluate",
+          "complexity": 3,
+          "lineno": 21
+        },
+        {
+          "function": "_check_condition",
+          "complexity": 2,
+          "lineno": 53
+        },
+        {
+          "function": "_get_avg_complexity",
+          "complexity": 3,
+          "lineno": 86
+        }
+      ],
+      "raw": {
+        "loc": 100,
+        "sloc": 50,
+        "comments": 4,
+        "multi": 24,
+        "blank": 21
+      },
+      "comment_ratio": 0.04,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 1.0,
+        "type_errors": 0,
+        "call_graph": {
+          "__init__": [
+            "open",
+            "safe_load"
+          ],
+          "evaluate": [
+            "get",
+            "_check_condition",
+            "append"
+          ],
+          "_check_condition": [
+            "_get_avg_complexity",
+            "get",
+            "bool",
+            "eval"
+          ],
+          "_get_avg_complexity": [
+            "get",
+            "sum",
+            "float",
+            "len"
+          ]
+        }
+      }
+    },
+    {
+      "path": "src\\code_atlas\\scanner.py",
+      "entities": [
+        {
+          "type": "function",
+          "name": "extract_entities",
+          "lineno": 23,
+          "end_lineno": 62,
+          "docstring": "Extract all classes and functions from AST.\n\nArgs:\n    tree: Parsed AST tree\n\nReturns:\n    List of entity dicts with type, name, lineno, end_lineno, docstring"
+        },
+        {
+          "type": "function",
+          "name": "compute_metrics",
+          "lineno": 65,
+          "end_lineno": 99,
+          "docstring": "Compute complexity and raw metrics.\n\nArgs:\n    source: Python source code\n\nReturns:\n    Tuple of (complexity list, raw metrics dict)"
+        },
+        {
+          "type": "function",
+          "name": "extract_git_metadata",
+          "lineno": 102,
+          "end_lineno": 148,
+          "docstring": "Extract commit count, last author, last date.\n\nArgs:\n    path: Path to file\n\nReturns:\n    Dict with commits, last_author, last_commit"
+        },
+        {
+          "type": "function",
+          "name": "build_dependency_graph",
+          "lineno": 151,
+          "end_lineno": 199,
+          "docstring": "Build dependency graph showing imports and imported_by relationships.\n\nArgs:\n    files_data: List of file analysis dicts\n\nReturns:\n    Dict mapping file paths to their dependencies"
+        },
+        {
+          "type": "class",
+          "name": "ASTScanner",
+          "lineno": 202,
+          "end_lineno": 465,
+          "docstring": "Handles the scanning process for Python files.",
+          "methods": [
+            "__init__",
+            "scan_file",
+            "_deep_analysis",
+            "scan_directory"
+          ],
+          "bases": []
+        },
+        {
+          "type": "function",
+          "name": "scan_directory",
+          "lineno": 468,
+          "end_lineno": 488,
+          "docstring": "Scan a directory of Python files and write index.\n\nArgs:\n    root_path: Root directory to scan\n    output_path: Path to write code_index.json\n    incremental: Use incremental caching to skip unchanged files\n    deep: Enable deep analysis (call graphs, type coverage)\n    progress_callback: Optional callback(file_path, current, total) for progress updates"
+        },
+        {
+          "type": "function",
+          "name": "__init__",
+          "lineno": 205,
+          "end_lineno": 211,
+          "docstring": "Initialize scanner with root directory.\n\nArgs:\n    root: Root directory to scan"
+        },
+        {
+          "type": "function",
+          "name": "scan_file",
+          "lineno": 213,
+          "end_lineno": 268,
+          "docstring": "Scan a single Python file and extract structure and metrics.\n\nArgs:\n    path: Path to Python file to scan\n\nReturns:\n    Dictionary containing file analysis data"
+        },
+        {
+          "type": "function",
+          "name": "_deep_analysis",
+          "lineno": 270,
+          "end_lineno": 360,
+          "docstring": "Perform deep analysis on a Python file.\n\nArgs:\n    path: Path to Python file\n\nReturns:\n    Deep analysis results including type coverage and call graph"
+        },
+        {
+          "type": "function",
+          "name": "scan_directory",
+          "lineno": 362,
+          "end_lineno": 465,
+          "docstring": "Scan all Python files in directory recursively.\n\nArgs:\n    incremental: Use incremental caching to skip unchanged files\n    deep: Enable deep analysis (call graphs, type coverage)\n    progress_callback: Optional callback(file_path, current, total) for progress updates\n\nReturns:\n    Complete code_index dict"
+        },
+        {
+          "type": "class",
+          "name": "CallVisitor",
+          "lineno": 318,
+          "end_lineno": 350,
+          "docstring": "Visit function definitions and track their calls.",
+          "methods": [
+            "__init__",
+            "visit_FunctionDef",
+            "visit_AsyncFunctionDef",
+            "visit_Call"
+          ],
+          "bases": [
+            "ast.NodeVisitor"
+          ]
+        },
+        {
+          "type": "function",
+          "name": "__init__",
+          "lineno": 321,
+          "end_lineno": 322,
+          "docstring": null
+        },
+        {
+          "type": "function",
+          "name": "visit_FunctionDef",
+          "lineno": 324,
+          "end_lineno": 329,
+          "docstring": "Visit function definition."
+        },
+        {
+          "type": "function",
+          "name": "visit_AsyncFunctionDef",
+          "lineno": 331,
+          "end_lineno": 336,
+          "docstring": "Visit async function definition."
+        },
+        {
+          "type": "function",
+          "name": "visit_Call",
+          "lineno": 338,
+          "end_lineno": 350,
+          "docstring": "Visit function call."
+        }
+      ],
+      "complexity": [
+        {
+          "function": "extract_entities",
+          "complexity": 10,
+          "lineno": 23
+        },
+        {
+          "function": "compute_metrics",
+          "complexity": 4,
+          "lineno": 65
+        },
+        {
+          "function": "extract_git_metadata",
+          "complexity": 6,
+          "lineno": 102
+        },
+        {
+          "function": "build_dependency_graph",
+          "complexity": 14,
+          "lineno": 151
+        },
+        {
+          "function": "scan_directory",
+          "complexity": 1,
+          "lineno": 468
+        },
+        {
+          "function": "ASTScanner",
+          "complexity": 11,
+          "lineno": 202
+        },
+        {
+          "function": "__init__",
+          "complexity": 1,
+          "lineno": 205
+        },
+        {
+          "function": "scan_file",
+          "complexity": 7,
+          "lineno": 213
+        },
+        {
+          "function": "_deep_analysis",
+          "complexity": 8,
+          "lineno": 270
+        },
+        {
+          "function": "scan_directory",
+          "complexity": 24,
+          "lineno": 362
+        }
+      ],
+      "raw": {
+        "loc": 488,
+        "sloc": 307,
+        "comments": 47,
+        "multi": 56,
+        "blank": 86
+      },
+      "comment_ratio": 0.096,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true
+    },
+    {
+      "path": "src\\code_atlas\\scoring.py",
+      "entities": [
+        {
+          "type": "class",
+          "name": "ScoringEngine",
+          "lineno": 9,
+          "end_lineno": 133,
+          "docstring": "Weighted scoring for refactor priority ranking.",
+          "methods": [
+            "__init__",
+            "score_file",
+            "rank",
+            "_get_avg_complexity",
+            "_scale"
+          ],
+          "bases": []
+        },
+        {
+          "type": "function",
+          "name": "__init__",
+          "lineno": 12,
+          "end_lineno": 34,
+          "docstring": "Initialize scoring engine from YAML file.\n\nArgs:\n    rules_path: Path to rules.yaml file"
+        },
+        {
+          "type": "function",
+          "name": "score_file",
+          "lineno": 36,
+          "end_lineno": 78,
+          "docstring": "Compute weighted refactor priority score for a file.\n\nArgs:\n    file_data: File analysis data from scanner\n    dependencies: Dependency graph data\n\nReturns:\n    Score dict with file, metrics, and total score"
+        },
+        {
+          "type": "function",
+          "name": "rank",
+          "lineno": 80,
+          "end_lineno": 100,
+          "docstring": "Rank all files by refactor priority score.\n\nArgs:\n    index: Complete code index from scanner\n\nReturns:\n    Sorted list of files with scores (highest priority first)"
+        },
+        {
+          "type": "function",
+          "name": "_get_avg_complexity",
+          "lineno": 102,
+          "end_lineno": 116,
+          "docstring": "Get average complexity for a file.\n\nArgs:\n    file_data: File analysis data\n\nReturns:\n    Average complexity value"
+        },
+        {
+          "type": "function",
+          "name": "_scale",
+          "lineno": 118,
+          "end_lineno": 133,
+          "docstring": "Scale value to 0-1 range.\n\nArgs:\n    value: Value to scale\n    min_val: Minimum expected value\n    max_val: Maximum expected value\n\nReturns:\n    Scaled value between 0 and 1"
+        }
+      ],
+      "complexity": [
+        {
+          "function": "ScoringEngine",
+          "complexity": 3,
+          "lineno": 9
+        },
+        {
+          "function": "__init__",
+          "complexity": 5,
+          "lineno": 12
+        },
+        {
+          "function": "score_file",
+          "complexity": 1,
+          "lineno": 36
+        },
+        {
+          "function": "rank",
+          "complexity": 2,
+          "lineno": 80
+        },
+        {
+          "function": "_get_avg_complexity",
+          "complexity": 3,
+          "lineno": 102
+        },
+        {
+          "function": "_scale",
+          "complexity": 2,
+          "lineno": 118
+        }
+      ],
+      "raw": {
+        "loc": 133,
+        "sloc": 65,
+        "comments": 7,
+        "multi": 31,
+        "blank": 29
+      },
+      "comment_ratio": 0.053,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 1.0,
+        "type_errors": 0,
+        "call_graph": {
+          "__init__": [
+            "open",
+            "safe_load"
+          ],
+          "score_file": [
+            "_get_avg_complexity",
+            "get",
+            "len",
+            "_scale",
+            "round"
+          ],
+          "rank": [
+            "get",
+            "score_file",
+            "append",
+            "sort",
+            "float"
+          ],
+          "_get_avg_complexity": [
+            "get",
+            "sum",
+            "float",
+            "len"
+          ],
+          "_scale": [
+            "float",
+            "max",
+            "min"
+          ]
+        }
+      }
+    },
+    {
+      "path": "src\\code_atlas\\__init__.py",
+      "entities": [],
+      "complexity": [],
+      "raw": {
+        "loc": 5,
+        "sloc": 2,
+        "comments": 0,
+        "multi": 0,
+        "blank": 2
+      },
+      "comment_ratio": 0.0,
+      "git": {
+        "commits": 0,
+        "last_author": "",
+        "last_commit": ""
+      },
+      "has_tests": true,
+      "deep": {
+        "type_coverage": 1.0,
+        "type_errors": 0,
+        "call_graph": {}
+      }
+    }
+  ],
+  "dependencies": {
+    "scripts\\build.py": {
+      "imports": [
+        "argparse",
+        "shutil",
+        "subprocess",
+        "sys",
+        "time",
+        "pathlib",
+        "xml.etree.ElementTree"
+      ],
+      "imported_by": []
+    },
+    "tests\\test_agent_adapter.py": {
+      "imports": [
+        "pathlib",
+        "unittest.mock",
+        "pytest",
+        "code_atlas.agent_adapter"
+      ],
+      "imported_by": []
+    },
+    "tests\\test_cache.py": {
+      "imports": [
+        "pathlib",
+        "pytest",
+        "code_atlas.cache"
+      ],
+      "imported_by": []
+    },
+    "tests\\test_integration.py": {
+      "imports": [
+        "tempfile",
+        "pathlib",
+        "code_atlas.query",
+        "code_atlas.scanner",
+        "json"
+      ],
+      "imported_by": []
+    },
+    "tests\\test_query.py": {
+      "imports": [
+        "json",
+        "tempfile",
+        "pathlib",
+        "code_atlas.query"
+      ],
+      "imported_by": []
+    },
+    "tests\\test_rules.py": {
+      "imports": [
+        "tempfile",
+        "pathlib",
+        "code_atlas.rules"
+      ],
+      "imported_by": []
+    },
+    "tests\\test_scanner.py": {
+      "imports": [
+        "tempfile",
+        "pathlib",
+        "code_atlas.scanner"
+      ],
+      "imported_by": []
+    },
+    "tests\\test_scoring.py": {
+      "imports": [
+        "tempfile",
+        "pathlib",
+        "code_atlas.scoring"
+      ],
+      "imported_by": []
+    },
+    "src\\code_atlas\\agent_adapter.py": {
+      "imports": [
+        "pathlib",
+        "typing",
+        "code_atlas.query",
+        "code_atlas.rules",
+        "code_atlas.scoring"
+      ],
+      "imported_by": []
+    },
+    "src\\code_atlas\\cache.py": {
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib"
+      ],
+      "imported_by": []
+    },
+    "src\\code_atlas\\cli.py": {
+      "imports": [
+        "json",
+        "subprocess",
+        "sys",
+        "pathlib",
+        "typer",
+        "code_atlas.agent_adapter",
+        "code_atlas.query",
+        "code_atlas.rules",
+        "code_atlas.scanner",
+        "code_atlas.scoring",
+        "rich.progress",
+        "os",
+        "sys",
+        "time",
+        "watchdog.events",
+        "watchdog.observers",
+        "os",
+        "time",
+        "os",
+        "signal",
+        "psutil",
+        "subprocess",
+        "time",
+        "psutil"
+      ],
+      "imported_by": []
+    },
+    "src\\code_atlas\\query.py": {
+      "imports": [
+        "json",
+        "pathlib",
+        "typing"
+      ],
+      "imported_by": []
+    },
+    "src\\code_atlas\\rules.py": {
+      "imports": [
+        "pathlib",
+        "typing",
+        "yaml"
+      ],
+      "imported_by": []
+    },
+    "src\\code_atlas\\scanner.py": {
+      "imports": [
+        "ast",
+        "json",
+        "subprocess",
+        "collections.abc",
+        "datetime",
+        "pathlib",
+        "typing",
+        "radon.complexity",
+        "radon.raw",
+        "mypy.api",
+        "code_atlas.cache"
+      ],
+      "imported_by": []
+    },
+    "src\\code_atlas\\scoring.py": {
+      "imports": [
+        "pathlib",
+        "typing",
+        "yaml"
+      ],
+      "imported_by": []
+    },
+    "src\\code_atlas\\__init__.py": {
+      "imports": [],
+      "imported_by": []
+    }
+  },
+  "symbol_index": {
+    "BuildRunner": "scripts\\build.py:12",
+    "main": "scripts\\build.py:347",
+    "__init__": "src\\code_atlas\\scoring.py:12",
+    "run_command": "scripts\\build.py:21",
+    "print_step": "scripts\\build.py:48",
+    "print_result": "scripts\\build.py:54",
+    "check_dependencies": "scripts\\build.py:66",
+    "sync_dependencies": "scripts\\build.py:89",
+    "format_code": "scripts\\build.py:96",
+    "lint_code": "scripts\\build.py:125",
+    "type_check": "scripts\\build.py:143",
+    "run_unit_tests": "scripts\\build.py:160",
+    "step_security": "scripts\\build.py:230",
+    "generate_reports": "scripts\\build.py:247",
+    "clean_artifacts": "scripts\\build.py:261",
+    "run_full_build": "scripts\\build.py:292",
+    "mock_index_data": "tests\\test_agent_adapter.py:12",
+    "adapter_with_mocks": "tests\\test_agent_adapter.py:47",
+    "test_agent_adapter_init": "tests\\test_agent_adapter.py:84",
+    "test_get_symbol_location": "tests\\test_agent_adapter.py:104",
+    "test_get_top_refactors": "tests\\test_agent_adapter.py:113",
+    "test_get_rule_violations": "tests\\test_agent_adapter.py:122",
+    "test_get_complex_functions": "tests\\test_agent_adapter.py:131",
+    "test_get_dependency_hotspots": "tests\\test_agent_adapter.py:140",
+    "test_get_untyped_or_poor_docs": "tests\\test_agent_adapter.py:149",
+    "test_summarize_state": "tests\\test_agent_adapter.py:159",
+    "test_adapter_without_rules": "tests\\test_agent_adapter.py:171",
+    "temp_cache": "tests\\test_cache.py:11",
+    "test_cache_init": "tests\\test_cache.py:17",
+    "test_cache_compute_hash": "tests\\test_cache.py:26",
+    "test_cache_set_get_hash": "tests\\test_cache.py:37",
+    "test_cache_is_unchanged": "tests\\test_cache.py:45",
+    "test_cache_update_file": "tests\\test_cache.py:64",
+    "test_cache_remove": "tests\\test_cache.py:86",
+    "test_cache_clear": "tests\\test_cache.py:95",
+    "test_cache_cleanup": "tests\\test_cache.py:105",
+    "test_cache_persistence": "tests\\test_cache.py:120",
+    "test_cache_load_invalid_json": "tests\\test_cache.py:137",
+    "test_cache_compute_hash_missing_file": "tests\\test_cache.py:148",
+    "test_scan_and_query_integration": "tests\\test_integration.py:10",
+    "test_code_index_find": "tests\\test_query.py:10",
+    "test_code_index_complex": "tests\\test_query.py:48",
+    "test_code_index_dependencies": "tests\\test_query.py:78",
+    "test_code_index_top_complex": "tests\\test_query.py:105",
+    "test_rule_engine_init": "tests\\test_rules.py:9",
+    "test_rule_engine_evaluate": "tests\\test_rules.py:36",
+    "test_scan_file_basic": "tests\\test_scanner.py:9",
+    "test_scan_directory": "tests\\test_scanner.py:37",
+    "test_scoring_engine_init": "tests\\test_scoring.py:9",
+    "test_scoring_engine_default_weights": "tests\\test_scoring.py:32",
+    "test_score_file": "tests\\test_scoring.py:41",
+    "test_rank": "tests\\test_scoring.py:71",
+    "AgentAdapter": "src\\code_atlas\\agent_adapter.py:11",
+    "get_symbol_location": "src\\code_atlas\\agent_adapter.py:31",
+    "get_top_refactors": "src\\code_atlas\\agent_adapter.py:42",
+    "get_rule_violations": "src\\code_atlas\\agent_adapter.py:57",
+    "get_complex_functions": "src\\code_atlas\\agent_adapter.py:73",
+    "get_dependency_hotspots": "src\\code_atlas\\agent_adapter.py:84",
+    "get_untyped_or_poor_docs": "src\\code_atlas\\agent_adapter.py:116",
+    "summarize_state": "src\\code_atlas\\agent_adapter.py:143",
+    "FileCache": "src\\code_atlas\\cache.py:8",
+    "load": "src\\code_atlas\\cache.py:21",
+    "save": "src\\code_atlas\\cache.py:29",
+    "get_hash": "src\\code_atlas\\cache.py:36",
+    "set_hash": "src\\code_atlas\\cache.py:47",
+    "remove": "src\\code_atlas\\cache.py:56",
+    "compute_hash": "src\\code_atlas\\cache.py:64",
+    "is_unchanged": "src\\code_atlas\\cache.py:78",
+    "update_file": "src\\code_atlas\\cache.py:95",
+    "clear": "src\\code_atlas\\cache.py:114",
+    "cleanup": "src\\code_atlas\\cache.py:118",
+    "scan": "src\\code_atlas\\cli.py:28",
+    "rank": "src\\code_atlas\\scoring.py:80",
+    "check": "src\\code_atlas\\cli.py:106",
+    "agent": "src\\code_atlas\\cli.py:138",
+    "watch": "src\\code_atlas\\cli.py:179",
+    "watch_status": "src\\code_atlas\\cli.py:439",
+    "stop_watch": "src\\code_atlas\\cli.py:527",
+    "PythonFileHandler": "src\\code_atlas\\cli.py:351",
+    "on_modified": "src\\code_atlas\\cli.py:354",
+    "on_created": "src\\code_atlas\\cli.py:361",
+    "on_deleted": "src\\code_atlas\\cli.py:368",
+    "progress_callback": "src\\code_atlas\\cli.py:63",
+    "CodeIndex": "src\\code_atlas\\query.py:8",
+    "_build_indices": "src\\code_atlas\\query.py:22",
+    "find": "src\\code_atlas\\query.py:35",
+    "complex": "src\\code_atlas\\query.py:46",
+    "dependencies": "src\\code_atlas\\query.py:71",
+    "top_complex": "src\\code_atlas\\query.py:86",
+    "RuleEngine": "src\\code_atlas\\rules.py:9",
+    "evaluate": "src\\code_atlas\\rules.py:21",
+    "_check_condition": "src\\code_atlas\\rules.py:53",
+    "_get_avg_complexity": "src\\code_atlas\\scoring.py:102",
+    "extract_entities": "src\\code_atlas\\scanner.py:23",
+    "compute_metrics": "src\\code_atlas\\scanner.py:65",
+    "extract_git_metadata": "src\\code_atlas\\scanner.py:102",
+    "build_dependency_graph": "src\\code_atlas\\scanner.py:151",
+    "ASTScanner": "src\\code_atlas\\scanner.py:202",
+    "scan_directory": "src\\code_atlas\\scanner.py:362",
+    "scan_file": "src\\code_atlas\\scanner.py:213",
+    "_deep_analysis": "src\\code_atlas\\scanner.py:270",
+    "CallVisitor": "src\\code_atlas\\scanner.py:318",
+    "visit_FunctionDef": "src\\code_atlas\\scanner.py:324",
+    "visit_AsyncFunctionDef": "src\\code_atlas\\scanner.py:331",
+    "visit_Call": "src\\code_atlas\\scanner.py:338",
+    "ScoringEngine": "src\\code_atlas\\scoring.py:9",
+    "score_file": "src\\code_atlas\\scoring.py:36",
+    "_scale": "src\\code_atlas\\scoring.py:118"
+  }
+}
